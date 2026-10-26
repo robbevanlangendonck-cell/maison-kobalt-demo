@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="nl-BE">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-WZRJfWvsnNCPcxzZwvyhovnZGqhZaC+8gPGPRbx6wTk='; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; frame-src https:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <script>document.documentElement.classList.add("js");</script>
+
+  <title>Diensten en prijzen · Maison Kobalt Barbers Mechelen</title>
+  <meta name="description" content="Heren knippen, baard trimmen, knippen + baard, nat scheren met warme doek en kinderen tot 12 jaar. Bekijk duur en prijs en reserveer bij Maison Kobalt Barbers in Mechelen.">
+  <!-- Demowebsite met een fictieve zaak: niet indexeren. Verwijder deze regel bij livegang. -->
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#142720">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+  <!-- Open Graph (vervang www.voorbeeld.be door het echte domein) -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="nl_BE">
+  <meta property="og:site_name" content="Maison Kobalt Barbers">
+  <meta property="og:title" content="Diensten en prijzen · Maison Kobalt Barbers">
+  <meta property="og:description" content="Knippen, baard, nat scheren met warme doek en kinderen tot 12 jaar. Met duur en prijs.">
+  <meta property="og:url" content="https://www.voorbeeld.be/diensten.html">
+  <meta property="og:image" content="https://www.voorbeeld.be/assets/details.jpg">
+  <meta property="og:image:width" content="1376">
+  <meta property="og:image:height" content="768">
+  <meta property="og:image:alt" content="Scheerkwast, scheermes, schaar en kam op een messing schaal">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&amp;display=swap">
+  <link rel="stylesheet" href="style.css">
+
+  <script src="script.js" defer></script>
+</head>
+<body class="pagina-diensten">
+  <a class="skiplink" href="#inhoud">Naar de inhoud</a>
+
+  <!-- Iconen: Lucide (ISC-licentie), dunne lijn -->
+  <svg class="sprite" aria-hidden="true" focusable="false">
+    <symbol id="i-telefoon" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+    <symbol id="i-klok" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><path d="M17.5 6.5h.01"/></symbol>
+    <symbol id="i-facebook" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 6h16"/><path d="M4 12h16"/><path d="M4 18h16"/></symbol>
+    <symbol id="i-sluit" viewBox="0 0 24 24"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></symbol>
+    <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+  </svg>
+
+  <header class="site-header" data-header>
+    <div class="wrap site-header__in">
+      <a class="logo" href="index.html">
+        <span class="logo__naam">Maison Kobalt</span>
+        <span class="logo__sub">Barbers</span>
+      </a>
+
+      <nav class="nav" id="hoofdmenu" aria-label="Hoofdmenu">
+        <ul class="nav__lijst lijst-kaal">
+          <li><a class="nav__link" href="diensten.html" aria-current="page">Diensten</a></li>
+          <li><a class="nav__link" href="index.html#over-ons">Over ons</a></li>
+          <li><a class="nav__link" href="index.html#contact">Contact</a></li>
+        </ul>
+        <div class="nav__extra">
+          <a class="knop knop--koper" href="reserveren.html" data-book>Reserveer nu</a>
+          <a class="nav__tel" href="tel:+3215000000"><svg class="icoon" aria-hidden="true"><use href="#i-telefoon"/></svg>+32 15 00 00 00</a>
+          <p class="nav__uren">di–vr 9u–18u · za 8u–17u · zo en ma gesloten</p>
+        </div>
+      </nav>
+
+      <div class="site-header__acties">
+        <a class="knop knop--koper knop--klein" href="reserveren.html" data-book>Reserveer nu</a>
+        <button class="menuknop" type="button" aria-expanded="false" aria-controls="hoofdmenu" data-menuknop>
+          <svg class="icoon icoon--open" aria-hidden="true"><use href="#i-menu"/></svg>
+          <svg class="icoon icoon--dicht" aria-hidden="true"><use href="#i-sluit"/></svg>
+          <span class="sr-only" data-menulabel>Menu openen</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="inhoud">
+    <section class="paginakop thema-diep" aria-labelledby="pagina-titel">
+      <div class="paginakop__beeld">
+        <img src="assets/details.jpg"
+             srcset="assets/details-720.jpg 720w, assets/details.jpg 1376w"
+             sizes="100vw" width="1376" height="768"
+             fetchpriority="high" decoding="async" alt="">
+      </div>
+      <div class="wrap">
+        <p class="label">Prijslijst</p>
+        <h1 id="pagina-titel">Diensten <em>&amp; prijzen</em></h1>
+        <p>Alles wat we doen, met duur en prijs. Kies je dienst en reserveer meteen.</p>
+      </div>
+    </section>
+
+    <section class="sectie thema-groen" aria-labelledby="prijslijst-titel">
+      <div class="wrap">
+        <div class="prijsbord onthul">
+          <div class="prijsbord__kop">
+            <div class="ornament" aria-hidden="true"><span></span></div>
+            <p class="prijsbord__titel">Maison Kobalt Barbers</p>
+            <h2 class="label label--midden" id="prijslijst-titel">Prijslijst</h2>
+          </div>
+
+          <ul class="lijst-kaal">
+            <li class="prijs">
+              <div class="prijs__regel">
+                <h3 class="prijs__naam">Heren knippen</h3>
+                <span class="prijs__stip" aria-hidden="true"></span>
+                <p class="prijs__bedrag"><span class="sr-only">Prijs: </span>€25</p>
+              </div>
+              <p class="prijs__omschrijving">Met schaar of tondeuse, afgewerkt met een strakke nek en een tip voor thuis.</p>
+              <div class="prijs__meta">
+                <span class="prijs__duur"><svg class="icoon" aria-hidden="true"><use href="#i-klok"/></svg>30 min</span>
+                <a class="knop knop--koperlijn knop--klein" href="reserveren.html" data-book>Reserveer<span class="sr-only"> heren knippen</span></a>
+              </div>
+            </li>
+            <li class="prijs">
+              <div class="prijs__regel">
+                <h3 class="prijs__naam">Baard trimmen</h3>
+                <span class="prijs__stip" aria-hidden="true"></span>
+                <p class="prijs__bedrag"><span class="sr-only">Prijs: </span>€15</p>
+              </div>
+              <p class="prijs__omschrijving">Je baard in model gebracht, met strakke lijnen op wang en hals.</p>
+              <div class="prijs__meta">
+                <span class="prijs__duur"><svg class="icoon" aria-hidden="true"><use href="#i-klok"/></svg>20 min</span>
+                <a class="knop knop--koperlijn knop--klein" href="reserveren.html" data-book>Reserveer<span class="sr-only"> baard trimmen</span></a>
+              </div>
+            </li>
+            <li class="prijs">
+              <div class="prijs__regel">
+                <h3 class="prijs__naam">Knippen + baard</h3>
+                <span class="prijs__stip" aria-hidden="true"></span>
+                <p class="prijs__bedrag"><span class="sr-only">Prijs: </span>€38</p>
+              </div>
+              <p class="prijs__omschrijving">Haar en baard in één afspraak, op elkaar afgestemd.</p>
+              <div class="prijs__meta">
+                <span class="prijs__duur"><svg class="icoon" aria-hidden="true"><use href="#i-klok"/></svg>50 min</span>
+                <a class="knop knop--koperlijn knop--klein" href="reserveren.html" data-book>Reserveer<span class="sr-only"> knippen en baard</span></a>
+              </div>
+            </li>
+            <li class="prijs">
+              <div class="prijs__regel">
+                <h3 class="prijs__naam">Nat scheren met warme doek</h3>
+                <span class="prijs__stip" aria-hidden="true"></span>
+                <p class="prijs__bedrag"><span class="sr-only">Prijs: </span>€30</p>
+              </div>
+              <p class="prijs__omschrijving">De klassieke scheerbeurt: warme doek, scheerzeep met kwast en het mes.</p>
+              <div class="prijs__meta">
+                <span class="prijs__duur"><svg class="icoon" aria-hidden="true"><use href="#i-klok"/></svg>30 min</span>
+                <a class="knop knop--koperlijn knop--klein" href="reserveren.html" data-book>Reserveer<span class="sr-only"> nat scheren met warme doek</span></a>
+              </div>
+            </li>
+            <li class="prijs">
+              <div class="prijs__regel">
+                <h3 class="prijs__naam">Kinderen <small>(tot 12 jaar)</small></h3>
+                <span class="prijs__stip" aria-hidden="true"></span>
+                <p class="prijs__bedrag"><span class="sr-only">Prijs: </span>€18</p>
+              </div>
+              <p class="prijs__omschrijving">Rustig en met geduld geknipt. Kom gerust samen, dan kijk je mee.</p>
+              <div class="prijs__meta">
+                <span class="prijs__duur"><svg class="icoon" aria-hidden="true"><use href="#i-klok"/></svg>25 min</span>
+                <a class="knop knop--koperlijn knop--klein" href="reserveren.html" data-book>Reserveer<span class="sr-only"> knippen voor kinderen</span></a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <p class="prijsbord__noot">Alle prijzen op deze demowebsite zijn demoprijzen.</p>
+      </div>
+    </section>
+
+    <section class="sectie thema-creme" id="faq" aria-labelledby="faq-titel">
+      <div class="wrap">
+        <header class="kop kop--midden onthul">
+          <p class="label label--midden">Goed om te weten</p>
+          <h2 id="faq-titel">Veelgestelde vragen</h2>
+        </header>
+
+        <div class="faq onthul">
+          <details>
+            <summary>Hoe boek ik een afspraak?<svg class="icoon" aria-hidden="true"><use href="#i-chevron"/></svg></summary>
+            <div class="faq__antwoord">
+              <p>Via een Reserveer-knop kom je op onze reserveerpagina. Liever persoonlijk? Bel <a href="tel:+3215000000">+32 15 00 00 00</a> of mail <a href="mailto:hallo@voorbeeld.be">hallo@voorbeeld.be</a>, dan zoeken we samen een moment.</p>
+            </div>
+          </details>
+          <details>
+            <summary>Kan ik mijn afspraak annuleren of verplaatsen?<svg class="icoon" aria-hidden="true"><use href="#i-chevron"/></svg></summary>
+            <div class="faq__antwoord">
+              <p>Ja. Laat het ons zo snel mogelijk weten via telefoon of mail. Dan kan iemand anders je plek krijgen en zoeken we voor jou een nieuw moment.</p>
+            </div>
+          </details>
+          <details>
+            <summary>Hoe kan ik betalen?<svg class="icoon" aria-hidden="true"><use href="#i-chevron"/></svg></summary>
+            <div class="faq__antwoord">
+              <p>Je betaalt na je afspraak in de zaak. [Betaalmogelijkheden bevestigen]</p>
+            </div>
+          </details>
+          <details>
+            <summary>Knippen jullie ook kinderen?<svg class="icoon" aria-hidden="true"><use href="#i-chevron"/></svg></summary>
+            <div class="faq__antwoord">
+              <p>Zeker. Kinderen tot 12 jaar knippen we voor €18, reken op ongeveer 25 minuten. Kom gerust samen, dan kan je meekijken.</p>
+            </div>
+          </details>
+        </div>
+
+        <p class="faq__meer">Staat je vraag er niet bij? Bel <a href="tel:+3215000000">+32 15 00 00 00</a> of mail <a href="mailto:hallo@voorbeeld.be">hallo@voorbeeld.be</a>.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="voet">
+    <div class="wrap voet__grid">
+      <div class="voet__merk">
+        <a class="logo" href="index.html">
+          <span class="logo__naam">Maison Kobalt</span>
+          <span class="logo__sub">Barbers</span>
+        </a>
+        <p>Klassieke barbershop in Mechelen. Knippen, baard en nat scheren, op afspraak.</p>
+        <!-- Sociale links volgen: vervang elke span door <a href="…" rel="noopener noreferrer"> -->
+        <ul class="sociaal lijst-kaal">
+          <li><span class="sociaal__plek" title="Instagram-link volgt"><svg class="icoon" aria-hidden="true"><use href="#i-instagram"/></svg><span class="sr-only">Instagram (link volgt)</span></span></li>
+          <li><span class="sociaal__plek" title="Facebook-link volgt"><svg class="icoon" aria-hidden="true"><use href="#i-facebook"/></svg><span class="sr-only">Facebook (link volgt)</span></span></li>
+        </ul>
+      </div>
+
+      <div>
+        <h2 class="voet__titel">Adres</h2>
+        <address>
+          Voorbeeldstraat 12<br>
+          2800 Mechelen<br>
+          <a href="tel:+3215000000">+32 15 00 00 00</a><br>
+          <a href="mailto:hallo@voorbeeld.be">hallo@voorbeeld.be</a>
+        </address>
+      </div>
+
+      <div>
+        <h2 class="voet__titel">Openingsuren</h2>
+        <dl class="voet__uren">
+          <div><dt>di – vr</dt><dd>9u – 18u</dd></div>
+          <div><dt>za</dt><dd>8u – 17u</dd></div>
+          <div><dt>zo en ma</dt><dd>Gesloten</dd></div>
+        </dl>
+      </div>
+
+      <div>
+        <h2 class="voet__titel">Menu</h2>
+        <ul class="voet__links lijst-kaal">
+          <li><a href="diensten.html" aria-current="page">Diensten</a></li>
+          <li><a href="index.html#over-ons">Over ons</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+          <li><a href="reserveren.html" data-book>Reserveren</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="wrap voet__onder">
+      <p>Demowebsite · fictieve zaak met demoprijzen</p>
+      <p>© <span data-jaar>2026</span> Maison Kobalt Barbers</p>
+    </div>
+  </footer>
+</body>
+</html>

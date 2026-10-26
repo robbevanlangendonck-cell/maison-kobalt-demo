@@ -1,0 +1,495 @@
+<!doctype html>
+<html lang="nl-BE">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-WZRJfWvsnNCPcxzZwvyhovnZGqhZaC+8gPGPRbx6wTk='; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; frame-src https:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <script>document.documentElement.classList.add("js");</script>
+
+  <title>Maison Kobalt Barbers · Barbershop in Mechelen</title>
+  <meta name="description" content="Klassieke barbershop in Mechelen. Knippen, baard trimmen en nat scheren met warme doek, op afspraak. Voorbeeldstraat 12, 2800 Mechelen.">
+  <!-- Demowebsite met een fictieve zaak: niet indexeren. Verwijder deze regel bij livegang. -->
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#142720">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+  <!-- Open Graph (vervang www.voorbeeld.be door het echte domein) -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="nl_BE">
+  <meta property="og:site_name" content="Maison Kobalt Barbers">
+  <meta property="og:title" content="Maison Kobalt Barbers · Barbershop in Mechelen">
+  <meta property="og:description" content="Knippen, baard en nat scheren met warme doek. Op afspraak, in een rustige zaak in Mechelen.">
+  <meta property="og:url" content="https://www.voorbeeld.be/">
+  <meta property="og:image" content="https://www.voorbeeld.be/assets/hero.jpg">
+  <meta property="og:image:width" content="1376">
+  <meta property="og:image:height" content="768">
+  <meta property="og:image:alt" content="Klassieke barbierstoelen voor een notenhouten kast met koperen lampen en groene tegels">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&amp;display=swap">
+  <link rel="stylesheet" href="style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BarberShop",
+    "name": "Maison Kobalt Barbers",
+    "description": "Klassieke barbershop in Mechelen: knippen, baard trimmen en nat scheren met warme doek, op afspraak.",
+    "url": "https://www.voorbeeld.be/",
+    "image": "https://www.voorbeeld.be/assets/hero.jpg",
+    "telephone": "+32 15 00 00 00",
+    "email": "hallo@voorbeeld.be",
+    "priceRange": "€15–€38",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Voorbeeldstraat 12",
+      "postalCode": "2800",
+      "addressLocality": "Mechelen",
+      "addressCountry": "BE"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["https://schema.org/Tuesday", "https://schema.org/Wednesday", "https://schema.org/Thursday", "https://schema.org/Friday"],
+        "opens": "09:00",
+        "closes": "18:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "https://schema.org/Saturday",
+        "opens": "08:00",
+        "closes": "17:00"
+      }
+    ]
+  }
+  </script>
+
+  <script src="script.js" defer></script>
+</head>
+<body class="home">
+  <a class="skiplink" href="#inhoud">Naar de inhoud</a>
+
+  <!-- Iconen: Lucide (ISC-licentie), dunne lijn -->
+  <svg class="sprite" aria-hidden="true" focusable="false">
+    <symbol id="i-schaar" viewBox="0 0 24 24"><circle cx="6" cy="6" r="3"/><path d="M8.12 8.12 12 12"/><path d="M20 4 8.12 15.88"/><circle cx="6" cy="18" r="3"/><path d="M14.8 14.8 20 20"/></symbol>
+    <symbol id="i-telefoon" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></symbol>
+    <symbol id="i-klok" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+    <symbol id="i-kalender-check" viewBox="0 0 24 24"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/><path d="m9 16 2 2 4-4"/></symbol>
+    <symbol id="i-kalender-klok" viewBox="0 0 24 24"><path d="M21 7.5V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h3.5"/><path d="M16 2v4"/><path d="M8 2v4"/><path d="M3 10h5"/><path d="M17.5 17.5 16 16.3V14"/><circle cx="16" cy="16" r="6"/></symbol>
+    <symbol id="i-kalender-x" viewBox="0 0 24 24"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/><path d="m14 14-4 4"/><path d="m10 14 4 4"/></symbol>
+    <symbol id="i-label" viewBox="0 0 24 24"><path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"/><circle cx="7.5" cy="7.5" r=".5"/></symbol>
+    <symbol id="i-zetel" viewBox="0 0 24 24"><path d="M19 9V6a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v3"/><path d="M3 16a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-5a2 2 0 0 0-4 0v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V11a2 2 0 0 0-4 0z"/><path d="M5 18v2"/><path d="M19 18v2"/></symbol>
+    <symbol id="i-ster" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><path d="M17.5 6.5h.01"/></symbol>
+    <symbol id="i-facebook" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 6h16"/><path d="M4 12h16"/><path d="M4 18h16"/></symbol>
+    <symbol id="i-sluit" viewBox="0 0 24 24"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></symbol>
+    <symbol id="i-pijl" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol>
+    <symbol id="i-extern" viewBox="0 0 24 24"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></symbol>
+    <symbol id="i-route" viewBox="0 0 24 24"><polygon points="3 11 22 2 13 21 11 13 3 11"/></symbol>
+    <symbol id="i-persoon" viewBox="0 0 24 24"><circle cx="12" cy="8" r="5"/><path d="M20 21a8 8 0 0 0-16 0"/></symbol>
+    <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+  </svg>
+
+  <header class="site-header" data-header>
+    <div class="wrap site-header__in">
+      <a class="logo" href="index.html">
+        <span class="logo__naam">Maison Kobalt</span>
+        <span class="logo__sub">Barbers</span>
+      </a>
+
+      <nav class="nav" id="hoofdmenu" aria-label="Hoofdmenu">
+        <ul class="nav__lijst lijst-kaal">
+          <li><a class="nav__link" href="diensten.html">Diensten</a></li>
+          <li><a class="nav__link" href="#over-ons">Over ons</a></li>
+          <li><a class="nav__link" href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav__extra">
+          <a class="knop knop--koper" href="reserveren.html" data-book>Reserveer nu</a>
+          <a class="nav__tel" href="tel:+3215000000"><svg class="icoon" aria-hidden="true"><use href="#i-telefoon"/></svg>+32 15 00 00 00</a>
+          <p class="nav__uren">di–vr 9u–18u · za 8u–17u · zo en ma gesloten</p>
+        </div>
+      </nav>
+
+      <div class="site-header__acties">
+        <a class="knop knop--koper knop--klein" href="reserveren.html" data-book>Reserveer nu</a>
+        <button class="menuknop" type="button" aria-expanded="false" aria-controls="hoofdmenu" data-menuknop>
+          <svg class="icoon icoon--open" aria-hidden="true"><use href="#i-menu"/></svg>
+          <svg class="icoon icoon--dicht" aria-hidden="true"><use href="#i-sluit"/></svg>
+          <span class="sr-only" data-menulabel>Menu openen</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="inhoud">
+    <!-- 1. Hero -->
+    <section class="hero thema-diep" aria-labelledby="hero-titel">
+      <div class="hero__beeld">
+        <img src="assets/hero.jpg"
+             srcset="assets/hero-720.jpg 720w, assets/hero.jpg 1376w"
+             sizes="100vw" width="1376" height="768"
+             fetchpriority="high" decoding="async"
+             alt="Twee klassieke lederen barbierstoelen voor een notenhouten kast met spiegels en koperen lampen, tegen flessengroene tegels">
+      </div>
+
+      <div class="wrap hero__inhoud">
+        <p class="label">Barbershop in Mechelen</p>
+        <h1 id="hero-titel">Klassiek vakwerk. <em>Met tijd voor jou.</em></h1>
+        <p class="hero__sub">Knippen, baard en nat scheren met warme doek. Op afspraak, in een rustige zaak aan de Voorbeeldstraat.</p>
+        <div class="knoppenrij">
+          <a class="knop knop--koper" href="reserveren.html" data-book>Reserveer nu</a>
+          <a class="knop knop--lijn" href="diensten.html">Bekijk diensten</a>
+        </div>
+      </div>
+
+      <div class="band" aria-hidden="true">
+        <div class="band__spoor">
+          <div class="band__groep">
+            <span>Knippen</span><span class="ruit"></span>
+            <span>Baard</span><span class="ruit"></span>
+            <span>Nat scheren</span><span class="ruit"></span>
+            <span>Warme doek</span><span class="ruit"></span>
+            <span>Op afspraak</span><span class="ruit"></span>
+            <span>Mechelen</span><span class="ruit"></span>
+            <span>Knippen</span><span class="ruit"></span>
+            <span>Baard</span><span class="ruit"></span>
+            <span>Nat scheren</span><span class="ruit"></span>
+            <span>Warme doek</span><span class="ruit"></span>
+            <span>Op afspraak</span><span class="ruit"></span>
+            <span>Mechelen</span><span class="ruit"></span>
+          </div>
+          <div class="band__groep">
+            <span>Knippen</span><span class="ruit"></span>
+            <span>Baard</span><span class="ruit"></span>
+            <span>Nat scheren</span><span class="ruit"></span>
+            <span>Warme doek</span><span class="ruit"></span>
+            <span>Op afspraak</span><span class="ruit"></span>
+            <span>Mechelen</span><span class="ruit"></span>
+            <span>Knippen</span><span class="ruit"></span>
+            <span>Baard</span><span class="ruit"></span>
+            <span>Nat scheren</span><span class="ruit"></span>
+            <span>Warme doek</span><span class="ruit"></span>
+            <span>Op afspraak</span><span class="ruit"></span>
+            <span>Mechelen</span><span class="ruit"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Over ons -->
+    <section class="sectie thema-creme" id="over-ons" aria-labelledby="over-titel">
+      <div class="wrap over">
+        <div class="over__tekst onthul">
+          <p class="label">Over ons</p>
+          <h2 id="over-titel">Neem plaats. <em>Wij nemen de tijd.</em></h2>
+          <p class="lead">Maison Kobalt is een klassieke barbershop in Mechelen. Groene tegels, een lederen stoel en een warme doek: het voelt vertrouwd zodra je binnenstapt.</p>
+          <p>Jens en Yassine werken op afspraak. Zo is er tijd voor een kort gesprek, een strakke afwerking en een tip om je kapsel thuis in vorm te houden.</p>
+
+          <ul class="waarden lijst-kaal">
+            <li class="waarde">
+              <span class="waarde__icoon"><svg class="icoon" aria-hidden="true"><use href="#i-kalender-check"/></svg></span>
+              <div>
+                <h3>Op afspraak</h3>
+                <p>Je komt op jouw uur binnen, zonder wachtrij.</p>
+              </div>
+            </li>
+            <li class="waarde">
+              <span class="waarde__icoon"><svg class="icoon" aria-hidden="true"><use href="#i-label"/></svg></span>
+              <div>
+                <h3>Duidelijke prijzen</h3>
+                <p>Je weet vooraf wat je betaalt.</p>
+              </div>
+            </li>
+            <li class="waarde">
+              <span class="waarde__icoon"><svg class="icoon" aria-hidden="true"><use href="#i-zetel"/></svg></span>
+              <div>
+                <h3>Geen haast</h3>
+                <p>Rustig zitten en even niets moeten.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="over__beelden onthul vertraging-1">
+          <div class="beeld beeld--groot">
+            <img class="pos-knippen" src="assets/knippen.jpg"
+                 srcset="assets/knippen-720.jpg 720w, assets/knippen.jpg 1376w"
+                 sizes="(min-width: 960px) 50vw, 90vw" width="1376" height="768"
+                 loading="lazy" decoding="async"
+                 alt="Barber met groen schort knipt het haar van een klant met schaar en kam">
+          </div>
+          <div class="beeld beeld--klein">
+            <img src="assets/details.jpg"
+                 srcset="assets/details-720.jpg 720w, assets/details.jpg 1376w"
+                 sizes="(min-width: 960px) 28vw, 52vw" width="1376" height="768"
+                 loading="lazy" decoding="async"
+                 alt="Scheerkwast, scheermes, schaar en kam op een messing schaal, naast een linnen doek en een groen flesje">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Diensten -->
+    <section class="sectie thema-groen" id="diensten" aria-labelledby="diensten-titel">
+      <div class="wrap">
+        <header class="kop kop--midden onthul">
+          <p class="label label--midden">Diensten</p>
+          <h2 id="diensten-titel">De klassiekers</h2>
+          <p>Een greep uit de prijslijst. Kies je dienst en reserveer meteen.</p>
+        </header>
+
+        <div class="prijsbord onthul">
+          <ul class="lijst-kaal">
+            <li class="prijs">
+              <div class="prijs__regel">
+                <h3 class="prijs__naam">Heren knippen</h3>
+                <span class="prijs__stip" aria-hidden="true"></span>
+                <p class="prijs__bedrag"><span class="sr-only">Prijs: </span>€25</p>
+              </div>
+              <div class="prijs__meta">
+                <span class="prijs__duur"><svg class="icoon" aria-hidden="true"><use href="#i-klok"/></svg>30 min</span>
+                <a class="knop knop--koperlijn knop--klein" href="reserveren.html" data-book>Reserveer<span class="sr-only"> heren knippen</span></a>
+              </div>
+            </li>
+            <li class="prijs">
+              <div class="prijs__regel">
+                <h3 class="prijs__naam">Knippen + baard</h3>
+                <span class="prijs__stip" aria-hidden="true"></span>
+                <p class="prijs__bedrag"><span class="sr-only">Prijs: </span>€38</p>
+              </div>
+              <div class="prijs__meta">
+                <span class="prijs__duur"><svg class="icoon" aria-hidden="true"><use href="#i-klok"/></svg>50 min</span>
+                <a class="knop knop--koperlijn knop--klein" href="reserveren.html" data-book>Reserveer<span class="sr-only"> knippen en baard</span></a>
+              </div>
+            </li>
+            <li class="prijs">
+              <div class="prijs__regel">
+                <h3 class="prijs__naam">Nat scheren met warme doek</h3>
+                <span class="prijs__stip" aria-hidden="true"></span>
+                <p class="prijs__bedrag"><span class="sr-only">Prijs: </span>€30</p>
+              </div>
+              <div class="prijs__meta">
+                <span class="prijs__duur"><svg class="icoon" aria-hidden="true"><use href="#i-klok"/></svg>30 min</span>
+                <a class="knop knop--koperlijn knop--klein" href="reserveren.html" data-book>Reserveer<span class="sr-only"> nat scheren met warme doek</span></a>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <p class="prijsbord-onder onthul">
+          <a class="pijl-link" href="diensten.html">Bekijk alle diensten en prijzen <svg class="icoon" aria-hidden="true"><use href="#i-pijl"/></svg></a>
+        </p>
+      </div>
+    </section>
+
+    <!-- 4. Fotostrook -->
+    <section class="sectie thema-creme" aria-labelledby="galerij-titel">
+      <div class="wrap">
+        <header class="kop onthul">
+          <p class="label">Uit de zaak</p>
+          <h2 id="galerij-titel">Vakwerk van dichtbij</h2>
+        </header>
+      </div>
+      <div class="galerij onthul" role="region" aria-label="Foto's uit de zaak, horizontaal scrollbaar op kleine schermen" tabindex="0">
+        <figure>
+          <div class="beeld">
+            <img class="pos-baard" src="assets/baard.jpg" width="1376" height="768" loading="lazy" decoding="async"
+                 alt="Barber werkt de baardlijn van een klant bij met een scheermes">
+          </div>
+          <figcaption>Baard in model</figcaption>
+        </figure>
+        <figure>
+          <div class="beeld">
+            <img class="pos-resultaat" src="assets/resultaat.jpg" width="1376" height="768" loading="lazy" decoding="async"
+                 alt="Achterkant van een vers geknipt kapsel met strakke fade, in de barbierstoel">
+          </div>
+          <figcaption>Strak afgewerkt</figcaption>
+        </figure>
+        <figure>
+          <div class="beeld">
+            <img class="pos-scheren" src="assets/nat-scheren.jpg" width="1376" height="768" loading="lazy" decoding="async"
+                 alt="Klant ligt achterover met een warme, dampende doek over het gezicht, naast een koperen scheerkom">
+          </div>
+          <figcaption>Nat scheren met warme doek</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- 5. Team -->
+    <section class="sectie thema-diep" id="team" aria-labelledby="team-titel">
+      <div class="wrap">
+        <header class="kop kop--midden onthul">
+          <p class="label label--midden">Team</p>
+          <h2 id="team-titel">Wie je knipt</h2>
+          <p>Twee barbers, één manier van werken: rustig, precies en met aandacht voor wat jij wil.</p>
+        </header>
+
+        <ul class="team lijst-kaal">
+          <li class="lid onthul">
+            <div class="beeld lid__foto">
+              <img class="pos-jens" src="assets/team-jens.jpg" width="1376" height="768" loading="lazy" decoding="async"
+                   alt="Jens, barber met volle baard en groen schort, staat met gekruiste armen in de zaak">
+            </div>
+            <h3 class="lid__naam">Jens</h3>
+            <p class="lid__rol">Barber</p>
+          </li>
+          <li class="lid onthul vertraging-1">
+            <!-- Placeholder: vervang door een <div class="beeld lid__foto"><img …></div> zodra er een foto is -->
+            <div class="lid__foto lid__foto--leeg">
+              <svg class="icoon" aria-hidden="true"><use href="#i-persoon"/></svg>
+              <span>Foto volgt</span>
+            </div>
+            <h3 class="lid__naam">Yassine</h3>
+            <p class="lid__rol">Barber</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 6. Reviews: alleen echte reviews, met toestemming -->
+    <section class="sectie thema-linnen" id="reviews" aria-labelledby="reviews-titel">
+      <div class="wrap reviews">
+        <header class="kop kop--midden onthul">
+          <p class="label label--midden">Reviews</p>
+          <h2 id="reviews-titel">Wat klanten zeggen</h2>
+        </header>
+
+        <div class="score onthul">
+          <p class="score__getal" aria-hidden="true">–,–</p>
+          <div class="score__sterren" aria-hidden="true">
+            <svg class="icoon"><use href="#i-ster"/></svg>
+            <svg class="icoon"><use href="#i-ster"/></svg>
+            <svg class="icoon"><use href="#i-ster"/></svg>
+            <svg class="icoon"><use href="#i-ster"/></svg>
+            <svg class="icoon"><use href="#i-ster"/></svg>
+          </div>
+          <p class="score__label">Google-score volgt</p>
+        </div>
+
+        <p class="reviews__leeg onthul">[Echte Google-reviews volgen]</p>
+        <p class="reviews__noot">We tonen hier alleen echte reviews, met toestemming van de klant.</p>
+      </div>
+    </section>
+
+    <!-- 7. Locatie -->
+    <section class="sectie thema-groen" id="contact" aria-labelledby="contact-titel">
+      <div class="wrap locatie">
+        <div class="beeld locatie__foto onthul">
+          <img class="pos-etalage" src="assets/etalage.jpg"
+               srcset="assets/etalage-720.jpg 720w, assets/etalage.jpg 1376w"
+               sizes="(min-width: 960px) 50vw, 100vw" width="1376" height="768"
+               loading="lazy" decoding="async"
+               alt="Groene winkelpui met verlichte etalage, koperen lantaarn en barbierspaal aan een kasseistraat">
+        </div>
+
+        <div class="locatie__info onthul vertraging-1">
+          <p class="label">Bezoek ons</p>
+          <h2 id="contact-titel">Vind ons in Mechelen</h2>
+          <p class="open-status" data-open-status hidden></p>
+
+          <address class="adres">
+            <p class="adres__rij"><svg class="icoon" aria-hidden="true"><use href="#i-pin"/></svg><span>Maison Kobalt Barbers<br>Voorbeeldstraat 12<br>2800 Mechelen</span></p>
+            <p class="adres__rij"><svg class="icoon" aria-hidden="true"><use href="#i-telefoon"/></svg><a href="tel:+3215000000">+32 15 00 00 00</a></p>
+            <p class="adres__rij"><svg class="icoon" aria-hidden="true"><use href="#i-mail"/></svg><a href="mailto:hallo@voorbeeld.be">hallo@voorbeeld.be</a></p>
+          </address>
+
+          <table class="uren" data-uren>
+            <caption>Openingsuren</caption>
+            <tbody>
+              <tr data-dag="1" class="is-gesloten"><th scope="row">Maandag</th><td>Gesloten</td></tr>
+              <tr data-dag="2" data-open="09:00" data-sluit="18:00"><th scope="row">Dinsdag</th><td>9u – 18u</td></tr>
+              <tr data-dag="3" data-open="09:00" data-sluit="18:00"><th scope="row">Woensdag</th><td>9u – 18u</td></tr>
+              <tr data-dag="4" data-open="09:00" data-sluit="18:00"><th scope="row">Donderdag</th><td>9u – 18u</td></tr>
+              <tr data-dag="5" data-open="09:00" data-sluit="18:00"><th scope="row">Vrijdag</th><td>9u – 18u</td></tr>
+              <tr data-dag="6" data-open="08:00" data-sluit="17:00"><th scope="row">Zaterdag</th><td>8u – 17u</td></tr>
+              <tr data-dag="0" class="is-gesloten"><th scope="row">Zondag</th><td>Gesloten</td></tr>
+            </tbody>
+          </table>
+
+          <div class="knoppenrij">
+            <a class="knop knop--koper" href="tel:+3215000000"><svg class="icoon" aria-hidden="true"><use href="#i-telefoon"/></svg>Bel ons</a>
+            <a class="knop knop--lijn" href="https://www.google.com/maps/dir/?api=1&amp;destination=Voorbeeldstraat%2012%2C%202800%20Mechelen" target="_blank" rel="noopener noreferrer"><svg class="icoon" aria-hidden="true"><use href="#i-route"/></svg>Route<span class="sr-only"> (opent Google Maps in een nieuw tabblad)</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. Slot-CTA -->
+    <section class="slot thema-diep" aria-labelledby="slot-titel">
+      <div class="slot__beeld">
+        <img src="assets/wachtruimte.jpg"
+             srcset="assets/wachtruimte-720.jpg 720w, assets/wachtruimte.jpg 1376w"
+             sizes="100vw" width="1376" height="768"
+             loading="lazy" decoding="async" alt="">
+      </div>
+      <div class="wrap slot__inhoud onthul">
+        <div class="ornament" aria-hidden="true"><span></span></div>
+        <h2 id="slot-titel">Klaar voor een frisse look?</h2>
+        <p>Kies je dienst en een moment dat jou past.</p>
+        <div class="knoppenrij knoppenrij--midden">
+          <a class="knop knop--koper" href="reserveren.html" data-book>Reserveer nu</a>
+        </div>
+        <p class="slot__bel">Liever bellen? <a href="tel:+3215000000">+32 15 00 00 00</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="voet">
+    <div class="wrap voet__grid">
+      <div class="voet__merk">
+        <a class="logo" href="index.html">
+          <span class="logo__naam">Maison Kobalt</span>
+          <span class="logo__sub">Barbers</span>
+        </a>
+        <p>Klassieke barbershop in Mechelen. Knippen, baard en nat scheren, op afspraak.</p>
+        <!-- Sociale links volgen: vervang elke span door <a href="…" rel="noopener noreferrer"> -->
+        <ul class="sociaal lijst-kaal">
+          <li><span class="sociaal__plek" title="Instagram-link volgt"><svg class="icoon" aria-hidden="true"><use href="#i-instagram"/></svg><span class="sr-only">Instagram (link volgt)</span></span></li>
+          <li><span class="sociaal__plek" title="Facebook-link volgt"><svg class="icoon" aria-hidden="true"><use href="#i-facebook"/></svg><span class="sr-only">Facebook (link volgt)</span></span></li>
+        </ul>
+      </div>
+
+      <div>
+        <h2 class="voet__titel">Adres</h2>
+        <address>
+          Voorbeeldstraat 12<br>
+          2800 Mechelen<br>
+          <a href="tel:+3215000000">+32 15 00 00 00</a><br>
+          <a href="mailto:hallo@voorbeeld.be">hallo@voorbeeld.be</a>
+        </address>
+      </div>
+
+      <div>
+        <h2 class="voet__titel">Openingsuren</h2>
+        <dl class="voet__uren">
+          <div><dt>di – vr</dt><dd>9u – 18u</dd></div>
+          <div><dt>za</dt><dd>8u – 17u</dd></div>
+          <div><dt>zo en ma</dt><dd>Gesloten</dd></div>
+        </dl>
+      </div>
+
+      <div>
+        <h2 class="voet__titel">Menu</h2>
+        <ul class="voet__links lijst-kaal">
+          <li><a href="diensten.html">Diensten</a></li>
+          <li><a href="#over-ons">Over ons</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="reserveren.html" data-book>Reserveren</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="wrap voet__onder">
+      <p>Demowebsite · fictieve zaak met demoprijzen</p>
+      <p>© <span data-jaar>2026</span> Maison Kobalt Barbers</p>
+    </div>
+  </footer>
+</body>
+</html>

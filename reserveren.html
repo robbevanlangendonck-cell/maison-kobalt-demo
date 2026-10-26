@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="nl-BE">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-WZRJfWvsnNCPcxzZwvyhovnZGqhZaC+8gPGPRbx6wTk='; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; frame-src https:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <script>document.documentElement.classList.add("js");</script>
+
+  <title>Reserveren · Maison Kobalt Barbers Mechelen</title>
+  <meta name="description" content="Maak een afspraak bij Maison Kobalt Barbers in Mechelen. Kies je moment of bel ons op +32 15 00 00 00.">
+  <!-- Demowebsite met een fictieve zaak: niet indexeren. Verwijder deze regel bij livegang. -->
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#142720">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+  <!-- Open Graph (vervang www.voorbeeld.be door het echte domein) -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="nl_BE">
+  <meta property="og:site_name" content="Maison Kobalt Barbers">
+  <meta property="og:title" content="Reserveren · Maison Kobalt Barbers">
+  <meta property="og:description" content="Maak een afspraak bij Maison Kobalt Barbers in Mechelen.">
+  <meta property="og:url" content="https://www.voorbeeld.be/reserveren.html">
+  <meta property="og:image" content="https://www.voorbeeld.be/assets/wachtruimte.jpg">
+  <meta property="og:image:width" content="1376">
+  <meta property="og:image:height" content="768">
+  <meta property="og:image:alt" content="Wachtruimte met lederen chesterfield voor een flessengroene muur vol ingelijste foto's">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&amp;display=swap">
+  <link rel="stylesheet" href="style.css">
+
+  <script src="script.js" defer></script>
+</head>
+<body class="pagina-reserveren">
+  <a class="skiplink" href="#inhoud">Naar de inhoud</a>
+
+  <!-- Iconen: Lucide (ISC-licentie), dunne lijn -->
+  <svg class="sprite" aria-hidden="true" focusable="false">
+    <symbol id="i-telefoon" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></symbol>
+    <symbol id="i-kalender-klok" viewBox="0 0 24 24"><path d="M21 7.5V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h3.5"/><path d="M16 2v4"/><path d="M8 2v4"/><path d="M3 10h5"/><path d="M17.5 17.5 16 16.3V14"/><circle cx="16" cy="16" r="6"/></symbol>
+    <symbol id="i-kalender-x" viewBox="0 0 24 24"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/><path d="m14 14-4 4"/><path d="m10 14 4 4"/></symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><path d="M17.5 6.5h.01"/></symbol>
+    <symbol id="i-facebook" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 6h16"/><path d="M4 12h16"/><path d="M4 18h16"/></symbol>
+    <symbol id="i-sluit" viewBox="0 0 24 24"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></symbol>
+    <symbol id="i-extern" viewBox="0 0 24 24"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+  </svg>
+
+  <header class="site-header" data-header>
+    <div class="wrap site-header__in">
+      <a class="logo" href="index.html">
+        <span class="logo__naam">Maison Kobalt</span>
+        <span class="logo__sub">Barbers</span>
+      </a>
+
+      <nav class="nav" id="hoofdmenu" aria-label="Hoofdmenu">
+        <ul class="nav__lijst lijst-kaal">
+          <li><a class="nav__link" href="diensten.html">Diensten</a></li>
+          <li><a class="nav__link" href="index.html#over-ons">Over ons</a></li>
+          <li><a class="nav__link" href="index.html#contact">Contact</a></li>
+        </ul>
+        <div class="nav__extra">
+          <a class="knop knop--koper" href="reserveren.html" data-book aria-current="page">Reserveer nu</a>
+          <a class="nav__tel" href="tel:+3215000000"><svg class="icoon" aria-hidden="true"><use href="#i-telefoon"/></svg>+32 15 00 00 00</a>
+          <p class="nav__uren">di–vr 9u–18u · za 8u–17u · zo en ma gesloten</p>
+        </div>
+      </nav>
+
+      <div class="site-header__acties">
+        <a class="knop knop--koper knop--klein" href="reserveren.html" data-book aria-current="page">Reserveer nu</a>
+        <button class="menuknop" type="button" aria-expanded="false" aria-controls="hoofdmenu" data-menuknop>
+          <svg class="icoon icoon--open" aria-hidden="true"><use href="#i-menu"/></svg>
+          <svg class="icoon icoon--dicht" aria-hidden="true"><use href="#i-sluit"/></svg>
+          <span class="sr-only" data-menulabel>Menu openen</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="inhoud">
+    <section class="paginakop thema-diep" aria-labelledby="pagina-titel">
+      <div class="paginakop__beeld">
+        <img src="assets/wachtruimte.jpg"
+             srcset="assets/wachtruimte-720.jpg 720w, assets/wachtruimte.jpg 1376w"
+             sizes="100vw" width="1376" height="768"
+             fetchpriority="high" decoding="async" alt="">
+      </div>
+      <div class="wrap">
+        <p class="label">Reserveren</p>
+        <h1 id="pagina-titel">Neem alvast <em>plaats.</em></h1>
+        <p>Kies je vestiging en een moment dat jou past. Liever bellen? Dat kan altijd.</p>
+      </div>
+    </section>
+
+    <section class="sectie thema-creme" id="boeking" aria-labelledby="boeking-titel">
+      <div class="wrap boeking">
+        <header class="kop">
+          <p class="label">Online reserveren</p>
+          <h2 id="boeking-titel">Jouw vestiging</h2>
+        </header>
+
+        <!-- Eén kaart per vestiging. data-loc = sleutel in BOEKING.locaties (script.js) -->
+        <div class="vestigingen">
+          <a class="vestiging" href="reserveren.html?loc=mechelen#boeking" data-loc="mechelen" aria-current="true">
+            <span class="vestiging__naam">Mechelen
+              <span class="vestiging__vink"><svg class="icoon" aria-hidden="true"><use href="#i-check"/></svg>Gekozen</span>
+            </span>
+            <span class="vestiging__adres">Voorbeeldstraat 12, 2800 Mechelen</span>
+            <span class="vestiging__uren">di–vr 9u–18u · za 8u–17u</span>
+          </a>
+        </div>
+
+        <!-- Salonized-agenda: script.js laadt hier de widgetUrl uit BOEKING in een iframe. -->
+        <div id="boeking-widget" aria-live="polite"></div>
+
+        <noscript>
+          <div class="boeking-melding thema-groen">
+            <svg class="icoon icoon--groot" aria-hidden="true"><use href="#i-kalender-klok"/></svg>
+            <h3>Reserveer telefonisch of per mail</h3>
+            <p>Bel ons op <a href="tel:+3215000000">+32 15 00 00 00</a> of mail naar <a href="mailto:hallo@voorbeeld.be">hallo@voorbeeld.be</a>. We zoeken samen een moment dat jou past.</p>
+          </div>
+        </noscript>
+
+        <p class="boeking__bel">Liever bellen? <a href="tel:+3215000000">+32 15 00 00 00</a> · <a href="mailto:hallo@voorbeeld.be">hallo@voorbeeld.be</a></p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Sjablonen voor de boekingscontainer (gebruikt door script.js) -->
+  <template id="tpl-binnenkort">
+    <div class="boeking-melding thema-groen">
+      <svg class="icoon icoon--groot" aria-hidden="true"><use href="#i-kalender-klok"/></svg>
+      <h3>Online boeken komt binnenkort</h3>
+      <p>Bel of mail ons voor een afspraak.</p>
+      <div class="knoppenrij knoppenrij--midden">
+        <a class="knop knop--koper" href="tel:+3215000000" data-tel><svg class="icoon" aria-hidden="true"><use href="#i-telefoon"/></svg><span data-tel-tekst>Bel +32 15 00 00 00</span></a>
+        <a class="knop knop--lijn" href="mailto:hallo@voorbeeld.be"><svg class="icoon" aria-hidden="true"><use href="#i-mail"/></svg>Mail ons</a>
+      </div>
+    </div>
+  </template>
+
+  <template id="tpl-laden">
+    <div class="boeking-laden">
+      <span class="boeking-laden__merk">Maison Kobalt</span>
+      <span class="spinner" aria-hidden="true"></span>
+      <span>Agenda laden…</span>
+    </div>
+  </template>
+
+  <template id="tpl-fout">
+    <div class="boeking-melding thema-groen">
+      <svg class="icoon icoon--groot" aria-hidden="true"><use href="#i-kalender-x"/></svg>
+      <h3>Agenda tijdelijk niet beschikbaar</h3>
+      <p>De online agenda laadt nu niet. Open hem in een nieuw tabblad of bel ons, dan plannen we je afspraak meteen in.</p>
+      <div class="knoppenrij knoppenrij--midden">
+        <a class="knop knop--koper" href="reserveren.html" data-agenda-link target="_blank" rel="noopener noreferrer"><svg class="icoon" aria-hidden="true"><use href="#i-extern"/></svg>Open de agenda<span class="sr-only"> in een nieuw tabblad</span></a>
+        <a class="knop knop--lijn" href="tel:+3215000000" data-tel><svg class="icoon" aria-hidden="true"><use href="#i-telefoon"/></svg><span data-tel-tekst>Bel +32 15 00 00 00</span></a>
+      </div>
+    </div>
+  </template>
+
+  <footer class="voet">
+    <div class="wrap voet__grid">
+      <div class="voet__merk">
+        <a class="logo" href="index.html">
+          <span class="logo__naam">Maison Kobalt</span>
+          <span class="logo__sub">Barbers</span>
+        </a>
+        <p>Klassieke barbershop in Mechelen. Knippen, baard en nat scheren, op afspraak.</p>
+        <!-- Sociale links volgen: vervang elke span door <a href="…" rel="noopener noreferrer"> -->
+        <ul class="sociaal lijst-kaal">
+          <li><span class="sociaal__plek" title="Instagram-link volgt"><svg class="icoon" aria-hidden="true"><use href="#i-instagram"/></svg><span class="sr-only">Instagram (link volgt)</span></span></li>
+          <li><span class="sociaal__plek" title="Facebook-link volgt"><svg class="icoon" aria-hidden="true"><use href="#i-facebook"/></svg><span class="sr-only">Facebook (link volgt)</span></span></li>
+        </ul>
+      </div>
+
+      <div>
+        <h2 class="voet__titel">Adres</h2>
+        <address>
+          Voorbeeldstraat 12<br>
+          2800 Mechelen<br>
+          <a href="tel:+3215000000">+32 15 00 00 00</a><br>
+          <a href="mailto:hallo@voorbeeld.be">hallo@voorbeeld.be</a>
+        </address>
+      </div>
+
+      <div>
+        <h2 class="voet__titel">Openingsuren</h2>
+        <dl class="voet__uren">
+          <div><dt>di – vr</dt><dd>9u – 18u</dd></div>
+          <div><dt>za</dt><dd>8u – 17u</dd></div>
+          <div><dt>zo en ma</dt><dd>Gesloten</dd></div>
+        </dl>
+      </div>
+
+      <div>
+        <h2 class="voet__titel">Menu</h2>
+        <ul class="voet__links lijst-kaal">
+          <li><a href="diensten.html">Diensten</a></li>
+          <li><a href="index.html#over-ons">Over ons</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+          <li><a href="reserveren.html" data-book aria-current="page">Reserveren</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="wrap voet__onder">
+      <p>Demowebsite · fictieve zaak met demoprijzen</p>
+      <p>© <span data-jaar>2026</span> Maison Kobalt Barbers</p>
+    </div>
+  </footer>
+</body>
+</html>
